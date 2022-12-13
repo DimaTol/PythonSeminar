@@ -5,6 +5,7 @@
 # m = 750
 # Output:
 # 2
-n = 700
-m = 750
-print (m/n)
+n =  int (input ())
+m = int (input ())
+t = (m + n - 1) // n
+print (t)
