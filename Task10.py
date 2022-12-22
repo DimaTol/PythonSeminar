@@ -38,7 +38,6 @@ min = 0
 if count_1 < count_2: min = count_1
 else:
     min = count_2
-# print (list_coin)
 
-print (f"Значений Решек {count_1}, Значений Орёл {count_2}")
+print (f"Монеток с Решкой {count_1}, Монеток с Орлом {count_2}")
 print (f"Необходимо перевернуть {min} монеток")
