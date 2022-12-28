@@ -6,3 +6,12 @@
 
 # пояснение
 # (-1 < 5, 2 < 3)
+
+array = [0, -1, 5, 2, 3, 4,9,6,7]
+count = 0
+for i in range (1,len(array)):
+    if array [i-1] < array [i]:
+        count +=1
+        
+print (array)
+print (count)
