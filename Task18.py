@@ -4,18 +4,27 @@
 # Заполните массив случайными натуральными числами от 1 до N.
 # Выведите, ближайший к X элемент. Если есть несколько элементов, которые равноудалены от X, выведите наименьший по величине.
 
-# Ввод: 10
-# Ввод: 7
-# 1 2 1 8 9 6 5 4 3 4
-# Вывод: 6
 
-from random import randint                      #задаем массив
-N = int (input("Задайте длинну массива: "))
-array = []
-count = 0 
+import random
 
-for i in range (N):
-    random_num = randint (0,9)
-    array.append (random_num)
-    
-print (array)
+n = int(input("Задайте длинну массива: "))
+l = []
+for num in range(0, n):
+    random_number = round(random.randint(0, 10))
+    l.append(random_number)
+print(l)
+
+
+x = int(input("Введите число X которое надо проверить: "))
+
+
+def checkNumber(count):
+    for i in range(0, len(l)):
+        if l[i] == x+count:
+            return l[i]
+        elif l[i] == x-count:
+            return l[i]
+
+    return checkNumber(count+1)
+
+print(checkNumber(0))
