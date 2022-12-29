@@ -24,9 +24,10 @@ print (array)
 
 X = int (input ("Введите число, которое необходимо проверить: "))
 
-for x in range (array):
-    if array [] = X
-    return count
+for x in (array):
+    if x == X:
+        count +=1
 
+print (count)
 
 
