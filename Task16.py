@@ -28,6 +28,6 @@ for x in (array):
     if x == X:
         count +=1
 
-print (count)
+print (f"Элементов в массиве {count}")
 
 
