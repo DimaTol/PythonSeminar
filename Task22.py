@@ -19,6 +19,7 @@ l = []
 for num in range(0, n):
     random_number = round(random.randint(0, 10))
     l.append(random_number)
+l = (sorted(l))
 print(l)
 
 m = int(input("Введите кол-во эл-тов второго набора: "))
@@ -26,6 +27,20 @@ x = []
 for num in range(0, m):
     random_number = round(random.randint(0, 10))
     x.append(random_number)
+x = (sorted(x))
 print(x)
+
+l = set(l)
+
+res = []
+for item in l:
+    if item in x:
+        res.append(item)
+if len(res)!=0:
+    print ('совпадения следующие', res)
+else:
+    print ('нет совпадений')
+
+
 
 
