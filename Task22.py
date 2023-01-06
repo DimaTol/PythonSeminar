@@ -37,9 +37,9 @@ for item in l:
     if item in x:
         res.append(item)
 if len(res)!=0:
-    print ('совпадения следующие', res)
+    print ("совпадения следующие", res)
 else:
-    print ('нет совпадений')
+    print ("нет совпадений")
 
 
 
