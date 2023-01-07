@@ -26,4 +26,4 @@ lis += lis
 ma = 0
 for i in range(n):
     ma = max(ma, lis[i] + lis[i+1] + lis[i+2])
-print("Модуль соберет",ma)
+print("Модуль соберет",ma, "ягод")
