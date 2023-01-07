@@ -19,11 +19,11 @@ n = int( input("Кол-во кустов = "))
 lis = []
 for i in range (0,n):
     lis.append (random.randint(1,9))
-print ("черники на кустах",lis)
+print ("Черники на кустах",lis)
 
-n = len(lis)
+m = len(lis)
 lis += lis
-ma = 0
-for i in range(n):
-    ma = max(ma, lis[i] + lis[i+1] + lis[i+2])
-print("Модуль соберет",ma, "ягод")
+res = 0
+for i in range(m):
+    res = max(res, lis[i] + lis[i+1] + lis[i+2])
+print("Модуль соберет",res, "ягод")
