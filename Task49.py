@@ -49,7 +49,7 @@ def find_farthest_orbit(list_of_orbits):
     print ("list areas", list_of_areas)
     
     max_area_index = list_of_areas.index(max(list_of_areas))
-    print ("winner", max_area_index)
+    print ("winner", max_area_index+1)
     
     return list_of_elliptical_orbits[max_area_index]
 
