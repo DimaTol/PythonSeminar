@@ -18,11 +18,14 @@
 # ok
 
 
-values = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29] 
-transformation = lambda x:x**2
+values = ["2", "3", "5"]
 
 
-transormed_values = list(map(transformation, values))
 
+transormed_values = list(map(int, values))
+
+transormed_values =  list(map(lambda x:x*x, transormed_values))
 print (values)
 print (transormed_values)
+
+
