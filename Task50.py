@@ -17,12 +17,12 @@
 fileName = 'tel.txt'
 
 
-def writeFile(file_name):
+def writeFile(file_name):                    #записываем в файл
     with open(file_name, 'a') as data:
-        data.writelines("Hello world111" + '\n')
+        data.write("Sidorov, Petr, Ivanovich, +926474747477" + '\n')
 
 
-def readFile(file_name):
+def readFile(file_name):                      #читаем из файла
     result = []
     with open(file_name, 'r+') as data:
         for line in data:
@@ -30,14 +30,28 @@ def readFile(file_name):
     return result
 
 
-def findUsers(userList):
+def findUsers(userList):                   #ищем в файле
     name = 'Ivan,'
     for user in userList:
         if user[1] == name:
             print(user[3])
+            
+
+ 
+def changeUsers(userList):   #вносим изменения в список, либо удаляем
+    
+    with open(userList, "rt") as file:
+        data = file.read()
+        data = data.replace('+7125478541','+1234567')
+
+    with open(userList, "wt") as file:
+        file.write(data)
+        
 
 
 # writeFile(fileName)
 print(type(readFile(fileName)))
 print(readFile(fileName))
-findUsers(readFile(fileName))
+# findUsers(readFile(fileName))
+
+print (changeUsers (fileName))
