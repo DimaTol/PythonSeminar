@@ -10,7 +10,9 @@ menuitems = [
         ("4", "Добавление водителей"),
         ("5", "Вывод маршрута"),
         ("6", "Добавление маршрута"),
-        ("7", "Выход", lambda: exit())]
+        ("7", "Вывод кондукторов"),
+        ("8", "Добавление кондукторов"),
+        ("9", "Выход", lambda: exit())]
 
 menu = Menu(menuitems)
     # menu.run('>:')
@@ -23,11 +25,18 @@ if text == '1':
     print(fn.print_bus())
 elif text == '2':
     fn.add_bus()
+    
 elif text == '3':
     print(fn.print_driver())
 elif text == '4':
     fn.add_driver()
+    
 elif text == '5':
     print(fn.print_route())
 elif text == '6':
     fn.add_route()
+    
+elif text == '7':
+    print (fn.print_conductor())
+elif text == '8':
+    fn.add_conductor()

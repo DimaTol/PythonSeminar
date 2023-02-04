@@ -27,4 +27,10 @@ def print_route():
 
 def add_route():
     save_data_to_file('route.txt', input("Введите маршрут: "))
+    
+def print_conductor():
+    return read_data_from_file('conductor.txt')
+
+def add_conductor ():
+    save_data_to_file('conductor.txt', input("Введите кондуктора: "))
 
